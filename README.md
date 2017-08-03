@@ -1,7 +1,7 @@
 # shadowsocks-manyuser
 shadowsocks-manyuser 数据库版
 
-# Debian7 ubuntu14 按照如下一键脚本即可，过程需要输入数据库相关信息! 
+# Debian7 ubuntu14 可以使用一键脚本，过程需要输入数据库相关信息! 
 
 本脚本是在debian7、ubuntu14上测试可行，采用supervisor进程守护。
 
@@ -65,7 +65,7 @@ cd /root/shadowsocks/
 
 screen -dmS Shadowsocks python server.py 
 
-Centos6也许你需要关闭防火墙：
+# Centos6也许你需要关闭防火墙：
 
 service iptables stop #停止
 
