@@ -1,10 +1,13 @@
 # shadowsocks-manyuser
 shadowsocks-manyuser 数据库版
 # Debian7 ubuntu14 按照如下一键脚本即可，过程需要输入数据库相关信息! 
+
 本脚本是在debian7、ubuntu14上测试可行，采用supervisor进程守护。
 wget http://down.36zz.net/ss/ss.sh && chmod +x ss.sh && ./ss.sh
+
 重载下supervisor：
 supervisorctl reload
+
 查看状态：
 supervisorctl tail -f shadowsocks stderr
 
@@ -35,6 +38,7 @@ vi /root/shadowsocks/config.json
 python server.py
 
 9.首先我们需要安装screen，编辑系统开机启动配置文件将下面的两行命令放进去
+
 9.1.安装screen
 yum install screen
 9.2.编辑开机启动文件
