@@ -41,8 +41,10 @@ python server.py
 
 9.1.安装screen
 yum install screen
+
 9.2.编辑开机启动文件
 vi /etc/rc.local
+
 9.3.将下面的两行命令加入开机启动即可
 cd /root/shadowsocks/
 screen -dmS Shadowsocks python server.py 
