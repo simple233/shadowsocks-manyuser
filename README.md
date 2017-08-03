@@ -1,11 +1,12 @@
 # shadowsocks-manyuser
-shadowsocks-manyuser 数据库版
+shadowsocks-manyuser 数据库版 适用于ss-panel V2
+请先准备好Mysql数据库，并且将ss-panel的SQL文件导入
 
-# Debian7 ubuntu14 可以使用一键脚本，过程需要输入数据库相关信息! 
+# Debian7 ubuntu14 一键脚本，按照提示操作！
 
 本脚本是在debian7、ubuntu14上测试可行，采用supervisor进程守护。
 
-wget http://down.36zz.net/ss/ss.sh && chmod +x ss.sh && ./ss.sh
+wget https://raw.githubusercontent.com/simple233/shadowsocks-manyuser/master/ss.sh && chmod +x ss.sh && ./ss.sh
 
 重载下supervisor：
 
@@ -19,7 +20,7 @@ supervisorctl tail -f shadowsocks stderr
 
 1.下载Shadowsocks-manyuser
 
-wget https://down.36zz.net/Shadowsocks/shadowsocks.zip
+wget https://raw.githubusercontent.com/simple233/shadowsocks-manyuser/master/shadowsocks.zip
 
 2.安装unzip(没有安装的话)
 
