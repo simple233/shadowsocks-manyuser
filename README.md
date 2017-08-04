@@ -57,7 +57,8 @@ vi Config.py
 6.执行安装脚本
 
 ```
-sh install.sh```
+sh install.sh
+```
 
 
 7.编辑加密方式建议aes-256-cfb
@@ -96,7 +97,5 @@ screen -dmS Shadowsocks python server.py
 # Centos6也许你需要关闭防火墙：
 ```
 service iptables stop  #停止;
-```
-```
 chkconfig iptables off  #禁用;
 ```
