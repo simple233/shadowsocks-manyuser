@@ -96,5 +96,6 @@ screen -dmS Shadowsocks python server.py
 # Centos6也许你需要关闭防火墙：
 ```
 service iptables stop #停止
+
 chkconfig iptables off #禁用
 ```
